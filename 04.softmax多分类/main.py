@@ -11,10 +11,10 @@ class SoftmaxRegression(nn.Module):
         super(SoftmaxRegression,self).__init__()
         #返回一个全连接层对象
         self.linear = nn.Linear(n_features,n_classes)
-    def forward(self,x):
+    def forward(self,X):
         #在 PyTorch 中，线性层对象实现了 __call__ 方法，使得它可以像函数一样被调用
         #返回的是一个张量，目前的size是1*n_classes
-        return self.linear(x)
+        return self.linear(X)
     
 
 

@@ -40,6 +40,7 @@ def draw_3D_expression(expression_str,title,xlabel,ylabel,zlabel):
     # 显示图形
     plt.show()
 
+
 def draw_decision_boundray(minx1,maxx1,minx2,maxx2,model):
     xx1,xx2 = np.meshgrid(np.arange(minx1,maxx1,0.02),
                           np.arange(minx2,maxx2,0.02))
@@ -56,5 +57,8 @@ def draw_decision_boundray(minx1,maxx1,minx2,maxx2,model):
 
     z = np.array(z).reshape(xx1.shape)
     return xx1,xx2,z
+
+
+
 if __name__ == "__main__":
     x = list()

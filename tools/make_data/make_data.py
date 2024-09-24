@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import draw_math_graph as dmg
+
+#制作数据
 def make_data(k,k_num,k_center):
     samples = list()
     for i in range(k):
